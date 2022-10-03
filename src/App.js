@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Previous from "./Components/Previous";
 import Team from "./Components/Team";
 
 function App() {
-  return <Team />;
+  return <Previous />;
 }
 
 export default App;
