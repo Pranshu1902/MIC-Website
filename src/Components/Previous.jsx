@@ -8,9 +8,44 @@ import deepthi from "../assets/img/team/JointGenSec.jpg";
 import neeraj from "../assets/img/team/TechHead.jpg";
 import muskan from "../assets/img/team/Designhead.jpg";
 import pje from "../assets/img/team/Prhead.jpg";
+import advisory1 from "../assets/img/team/advisory-1.jpg";
+import advisory2 from "../assets/img/team/advisory-2.jpg";
+import advisory3 from "../assets/img/team/advisory-3.jpg";
+import Footer from "./Footer";
 
 export default function Previous() {
   document.title = "Our Team";
+
+  const facultyData = {
+    name: "Dr. Anusha Kannan",
+    position: "Associate Professor",
+    description:
+      "Dedicated and experienced Professor in the Computer Science Department of VIT Chennai. Adept in the field of network security, she received her PhD from VIT Vellore. She is passionate about working with club members and preparing them for their future endeavours.",
+    image: faculty,
+  };
+
+  const advisory = [
+    {
+      name: "Pratik Garai",
+      image: advisory1,
+      position: "Advisory",
+      description:
+        "Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come.",
+    },
+    {
+      name: "Yashashwini Dixit",
+      image: advisory2,
+      position: "Advisory",
+      description:
+        "Actively involved in helping the members tackle their hurdles, planning towards making the club successful, and doing the best to assist the club.",
+    },
+    {
+      name: "Gyanadipta Mohanty",
+      image: advisory3,
+      position: "Advisory",
+      description: "Still Exploring",
+    },
+  ];
 
   const heads = [
     {
@@ -57,13 +92,29 @@ export default function Previous() {
     },
   ];
 
+  const coreMembers1 = [
+    {
+      name: "Sam Prince Franklin",
+      image: president,
+      position: "President",
+      description: "SELCOUTH",
+    },
+    {
+      name: "Shreejith SG",
+      image: vicepresident,
+      position: "Vice President",
+      description:
+        "I'm here to have fun, make people laugh and chew gum, but (un)fortunately I'm all out of gum",
+    },
+  ];
+
   const showMember = (member) => {
     return (
-      <div className="bg-white rounded-lg p-2 flex flex-col justify-center items-center">
-        <img src={member.image} width={"20%"} alt="" />
-        <div className="text-xl">{member.name}</div>
-        <div>{member.position}</div>
-        <div>{member.description}</div>
+      <div className="w-1/4 bg-white rounded-lg shadow-lg shadow-blue-200 p-2 flex flex-col justify-center items-center hover:scale-105 transition duration-200 ">
+        <img src={member.image} width={"100%"} height={"50%"} alt="" />
+        <div className="text-xl font-bold text-[#070952]">{member.name}</div>
+        <div className="text-gray-400">{member.position}</div>
+        <div className="font-thin italic">{member.description}</div>
       </div>
     );
   };
@@ -72,7 +123,7 @@ export default function Previous() {
     <div className="bg-gray-100">
       <header
         id="header"
-        className="fixed-top d-flex align-items-center header-transparent bg-blue-700 text-white"
+        className="fixed-top d-flex align-items-center header-transparent bg-[#070952] text-white"
       >
         <div className="flex justify-between">
           <div className="logo">
@@ -122,7 +173,7 @@ export default function Previous() {
         </div>
       </header>
 
-      <section id="hero" className="bg-blue-900 text-white p-6">
+      <section id="hero" className="bg-[#070952] text-white p-6">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -173,184 +224,40 @@ export default function Previous() {
       </section>
 
       <div>
+        {/* Faculty Co-ordinator */}
         <div className="flex flex-col justify-center items-center">
-          <p className="text-2xl">Faculty Co-ordinator</p>
+          <p className="text-2xl pb-12">Faculty Co-ordinator</p>
           <br />
-          <div className="flex flex-col justify-center items-center w-full">
-            <img src={faculty} width={"15%"} classNameName="img-fluid" alt="" />
-            <div className="flex flex-col justify-center p-6">
-              <p className="flex justify-center">Dr. Anusha Kannan</p>
-              <p className="flex justify-center">Associate Professor</p>
-              <p className="flex justify-center p-12">
-                Dedicated and experienced Professor in the Computer Science
-                Department of VIT Chennai. Adept in the field of network
-                security, she received her PhD from VIT Vellore. She is
-                passionate about working with club members and preparing them
-                for their future endeavours.
-              </p>
-            </div>
+          <div className="flex justify-center items-center">
+            {showMember(facultyData)}
           </div>
         </div>
         <br />
         <div className="container" data-aos="fade-up">
-          <header className="section-header">
-            <h2 className="flex justify-center text-2xl">Core Members</h2>
-          </header>
+          {/* Core Members */}
+          <h2 className="flex justify-center text-2xl">Core Members</h2>
           <br />
-          <div className="flex gap-2 p-12 justify-center">
-            <div className="flex w-1/2">
-              <div className="flex flex-col justify-center bg-white rounded-lg p-2">
-                <div className="">
-                  <img
-                    src={president}
-                    width={"10%"}
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="">
-                    <a href="https://www.linkedin.com/in/samprincefranklin/">
-                      <i className="bi bi-linkedin"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="flex flex-col justify-center">
-                  <p>Sam Prince Franklin</p>
-                  <span>President</span>
-                  <p>SELCOUTH</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-1/2 bg-white rounded-lg p-2" s>
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src={vicepresident}
-                    width={"20%"}
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <a href="https://www.linkedin.com/in/shreejithsg">
-                      <i className="bi bi-linkedin"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>Shreejith SG</h4>
-                  <span>Vice President</span>
-                  <p>
-                    I'm here to have fun, make people laugh and chew gum, but
-                    (un)fortunately I'm all out of gum
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="flex justify-center items-center gap-6">
+            {coreMembers1.map((member) => {
+              return showMember(member);
+            })}
           </div>
           <br />
           <div className="row gy-4">
-            <div className="flex gap-4">
+            <div className="flex gap-4 w-full">
               {coreMembers.map((member) => {
-                return <div className="w-1/3">{showMember(member)}</div>;
+                return <div className="">{showMember(member)}</div>;
               })}
             </div>
           </div>
         </div>
         <br />
+        {/* Heads */}
         <div className="row gy-4">
           <div className="flex gap-4">
             {heads.map((member) => {
-              return <div className="w-1/3">{showMember(member)}</div>;
+              return <div className="">{showMember(member)}</div>;
             })}
-          </div>
-        </div>
-        <br />
-        <div className="container" data-aos="fade-up">
-          <div className="row gy-4">
-            <div className="col-lg-1"></div>
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="assets/img/team/TechHead.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <a href="https://www.linkedin.com/in/neeraj-j-manurkar-64372b212/">
-                      <i className="bi bi-linkedin"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>Neeraj J Manurkar</h4>
-                  <span>Technical Head</span>
-                  <p>
-                    Good people are good because they've come to wisdom through
-                    failure
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="assets/img/team/Designhead.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <a href="https://www.linkedin.com/in/muskaan-yadav-068">
-                      <i className="bi bi-linkedin"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>Muskaan Yadav</h4>
-                  <span>Design and Content Head</span>
-                  <p>
-                    Perseverance is a virtue, success and failures are it's by
-                    product.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="assets/img/team/Prhead.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <a href="https://www.linkedin.com/in/je-sai-kailash-pulipati-347180202">
-                      <i className="bi bi-linkedin"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>P.Je Sai Kailash</h4>
-                  <span>Marketing and Public Relation Head</span>
-                  <p>"Having the dream is easy, making it come true is hard"</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <br />
@@ -358,150 +265,17 @@ export default function Previous() {
           <p className="text-2xl flex justify-center">Advisory</p>
         </header>
         <br />
+        {/* Advisory */}
         <div className="row gy-4">
-          <div className="col-lg-1"></div>
-          <div
-            className="col-lg-3 col-md-6 d-flex align-items-stretch"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div className="member">
-              <div className="member-img">
-                <img
-                  src="assets/img/team/advisory-1.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="social">
-                  <a href="https://www.linkedin.com/in/pratik-garai-bab1a4191/">
-                    <i className="bi bi-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-              <div className="member-info">
-                <h4>Pratik Garai</h4>
-                <span>Advisory</span>
-                <p>
-                  "Success isn't always about greatness. It's about consistency.
-                  Consistent hard work leads to success. Greatness will come."
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-lg-3 col-md-6 d-flex align-items-stretch"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="member">
-              <div className="member-img">
-                <img
-                  src="assets/img/team/advisory-2.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div className="social">
-                <a href="https://www.linkedin.com/in/yashashwinidixit/">
-                  <i className="bi bi-linkedin"></i>
-                </a>
-              </div>
-              <div className="member-info">
-                <h4>Yashashwini Dixit</h4>
-                <span>Advisory</span>
-                <p>
-                  Actively involved in helping the members tackle their hurdles,
-                  planning towards making the club successful, and doing the
-                  best to assist the club.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="col-lg-3 col-md-6 d-flex align-items-stretch"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div className="member">
-              <div className="member-img">
-                <img
-                  src="assets/img/team/advisory-3.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div className="social">
-                <a href="https://www.linkedin.com/in/gyanadipta-mohanty-86567b18b/">
-                  <i className="bi bi-linkedin"></i>
-                </a>
-              </div>
-              <div className="member-info">
-                <h4>Gyanadipta Mohanty</h4>
-                <span>Advisory</span>
-                <p>Still Exploring</p>
-              </div>
-            </div>
+          <div className="flex gap-4">
+            {advisory.map((member) => {
+              return <div className="">{showMember(member)}</div>;
+            })}
           </div>
         </div>
         <br />
       </div>
-      <footer id="footer">
-        <div className="footer-top">
-          <div className="container">
-            <div className="footer-info">
-              <h3>Microsoft Innovations Club</h3>
-              <p className="pb-3">
-                <em>
-                  “Technology is best when it brings people together.” - Matt
-                  Mullenweg
-                </em>
-              </p>
-              <p>
-                VIT Chennai ,Kelambakkam - Vandalur Rd
-                <br />
-                Chennai, Tamil Nadu 600127
-                <br />
-                <br />
-                <strong>Email:</strong> micvitcc@gmail.com
-              </p>
-              <div className="social-links mt-3">
-                <a href="https://discord.gg/c6EAayHHR3" className="discord">
-                  <i className="bx bxl-discord"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/microsoft.innovations.vitc/"
-                  className="instagram"
-                >
-                  <i className="bx bxl-instagram"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/microsoft-innovations-club-vitc/"
-                  className="linkedin"
-                >
-                  <i className="bx bxl-linkedin"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <a
-        href="/"
-        className="back-to-top d-flex align-items-center justify-content-center"
-      >
-        <i className="bi bi-arrow-up-short"></i>
-      </a>
-      <div id="preloader"></div>
-
-      <script src="assets/vendor/purecounter/purecounter.js"></script>
-      <script src="assets/vendor/aos/aos.js"></script>
-      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-      <script src="assets/vendor/php-email-form/validate.js"></script>
-      <script src="assets/js/main.js"></script>
+      <Footer />
     </div>
   );
 }
