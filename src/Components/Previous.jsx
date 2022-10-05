@@ -112,9 +112,9 @@ export default function Previous() {
     return (
       <div className="w-full md:w-1/4 bg-white rounded-lg shadow-lg shadow-blue-200 p-2 flex flex-col justify-center items-stretch hover:scale-105 transition duration-200">
         <img
+          className="max-h-64 object-cover"
           src={member.image}
           width={"100%"}
-          height={"50%"}
           alt={member.name}
         />
         <div className="flex flex-col justify-center items-center p-2">
@@ -243,13 +243,13 @@ export default function Previous() {
             Core Members
           </h2>
           <br />
-          <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-6">
+          <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-8">
             {coreMembers1.map((member) => {
               return showMember(member);
             })}
           </div>
           <br />
-          <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-6">
+          <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-8">
             {coreMembers.map((member) => {
               return showMember(member);
             })}
@@ -257,7 +257,7 @@ export default function Previous() {
         </div>
         <br />
         {/* Heads */}
-        <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-6">
+        <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-8">
           {heads.map((member) => {
             return showMember(member);
           })}
@@ -268,7 +268,7 @@ export default function Previous() {
         </header>
         <br />
         {/* Advisory */}
-        <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-6">
+        <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-8">
           {advisory.map((member) => {
             return showMember(member);
           })}
