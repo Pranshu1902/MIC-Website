@@ -110,21 +110,26 @@ export default function Previous() {
 
   const showMember = (member) => {
     return (
-      <div className="w-1/4 bg-white rounded-lg shadow-lg shadow-blue-200 p-2 flex flex-col justify-center items-center hover:scale-105 transition duration-200 ">
-        <img src={member.image} width={"100%"} height={"50%"} alt="" />
-        <div className="text-xl font-bold text-[#070952]">{member.name}</div>
-        <div className="text-gray-400">{member.position}</div>
-        <div className="font-thin italic">{member.description}</div>
+      <div className="w-full md:w-1/4 bg-white rounded-lg shadow-lg shadow-blue-200 p-2 flex flex-col justify-center items-stretch hover:scale-105 transition duration-200">
+        <img
+          src={member.image}
+          width={"100%"}
+          height={"50%"}
+          alt={member.name}
+        />
+        <div className="flex flex-col justify-center items-center p-2">
+          <div className="text-xl font-bold text-[#070952]">{member.name}</div>
+          <div className="text-gray-400">{member.position}</div>
+          <div className="font-thin italic">{member.description}</div>
+        </div>
       </div>
     );
   };
 
   return (
-    <div className="bg-gray-100">
-      <header
-        id="header"
-        className="fixed-top d-flex align-items-center header-transparent bg-[#070952] text-white"
-      >
+    <div>
+      {/* Header */}
+      <header className="fixed-top d-flex align-items-center header-transparent bg-[#070952] text-white">
         <div className="flex justify-between">
           <div className="logo">
             <a href="index.html">
@@ -173,18 +178,17 @@ export default function Previous() {
         </div>
       </header>
 
+      {/* Heading */}
       <section id="hero" className="bg-[#070952] text-white p-6">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-              <div data-aos="zoom-out">
-                <h1>
-                  <spa className="text-5xl font-bold">Our Team</spa>
-                </h1>
-                <h2 classNameName="text-2xl w-1/2 pt-4">
+              <div>
+                <p className="text-5xl font-bold">Our Team</p>
+                <p className="text-2xl font-light w-1/2 pt-4">
                   The strength of the MIC team is each individual member and the
                   strength of each member makes up our Innovative team.
-                </h2>
+                </p>
               </div>
             </div>
           </div>
@@ -226,52 +230,48 @@ export default function Previous() {
       <div>
         {/* Faculty Co-ordinator */}
         <div className="flex flex-col justify-center items-center">
-          <p className="text-2xl pb-12">Faculty Co-ordinator</p>
+          <p className="text-4xl font-medium pb-12">Faculty Co-ordinator</p>
           <br />
           <div className="flex justify-center items-center">
             {showMember(facultyData)}
           </div>
         </div>
         <br />
-        <div className="container" data-aos="fade-up">
+        <div>
           {/* Core Members */}
-          <h2 className="flex justify-center text-2xl">Core Members</h2>
+          <h2 className="flex justify-center text-4xl font-medium">
+            Core Members
+          </h2>
           <br />
-          <div className="flex justify-center items-center gap-6">
+          <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-6">
             {coreMembers1.map((member) => {
               return showMember(member);
             })}
           </div>
           <br />
-          <div className="row gy-4">
-            <div className="flex gap-4 w-full">
-              {coreMembers.map((member) => {
-                return <div className="">{showMember(member)}</div>;
-              })}
-            </div>
+          <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-6">
+            {coreMembers.map((member) => {
+              return showMember(member);
+            })}
           </div>
         </div>
         <br />
         {/* Heads */}
-        <div className="row gy-4">
-          <div className="flex gap-4">
-            {heads.map((member) => {
-              return <div className="">{showMember(member)}</div>;
-            })}
-          </div>
+        <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-6">
+          {heads.map((member) => {
+            return showMember(member);
+          })}
         </div>
         <br />
         <header className="section-header">
-          <p className="text-2xl flex justify-center">Advisory</p>
+          <p className="text-4xl font-medium flex justify-center">Advisory</p>
         </header>
         <br />
         {/* Advisory */}
-        <div className="row gy-4">
-          <div className="flex gap-4">
-            {advisory.map((member) => {
-              return <div className="">{showMember(member)}</div>;
-            })}
-          </div>
+        <div className="flex flex-col md:flex-row justify-center items-stretch h-full gap-6">
+          {advisory.map((member) => {
+            return showMember(member);
+          })}
         </div>
         <br />
       </div>
