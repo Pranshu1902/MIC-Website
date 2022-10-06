@@ -31,6 +31,7 @@ export default function Previous() {
       position: "Advisory",
       description:
         "Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come.",
+      linkedin: "https://www.linkedin.com/in/pratik-garai-bab1a4191/",
     },
     {
       name: "Yashashwini Dixit",
@@ -38,12 +39,14 @@ export default function Previous() {
       position: "Advisory",
       description:
         "Actively involved in helping the members tackle their hurdles, planning towards making the club successful, and doing the best to assist the club.",
+      linkedin: "https://www.linkedin.com/in/yashashwinidixit/",
     },
     {
       name: "Gyanadipta Mohanty",
       image: advisory3,
       position: "Advisory",
       description: "Still Exploring",
+      linkedin: "https://www.linkedin.com/in/gyanadipta-mohanty-86567b18b/",
     },
   ];
 
@@ -54,6 +57,7 @@ export default function Previous() {
       position: "Technical Head",
       description:
         "Good people are good because they've come to wisdom through failure",
+      linkedin: "https://www.linkedin.com/in/neeraj-j-manurkar-64372b212/",
     },
     {
       name: "Muskaan Yadav",
@@ -61,12 +65,14 @@ export default function Previous() {
       position: "Design and Content Head",
       description:
         "Perseverance is a virtue, success and failures are it's by product.",
+      linkedin: "https://www.linkedin.com/in/muskaan-yadav-068",
     },
     {
       name: "P.Je Sai Kailash",
       image: pje,
       position: "Marketing and Public Relation Head",
       description: "Having the dream is easy, making it come true is hard",
+      linkedin: "https://www.linkedin.com/in/je-sai-kailash-pulipati-347180202",
     },
   ];
 
@@ -77,18 +83,21 @@ export default function Previous() {
       position: "General Secretary",
       description:
         "Results happen over time, not overnight-work hard and be patient.",
+      linkedin: "https://www.linkedin.com/in/dewanshi-paul-2515091b9/",
     },
     {
       name: "Venkat Amith Woonna",
       image: venkat,
       position: "Principle Secretary",
       description: "Simply Curious",
+      linkedin: "https://in.linkedin.com/in/venkat-amith-woonna-38bb721b8",
     },
     {
       name: "Deepthi B",
       image: deepthi,
       position: "Joint General Secretary",
       description: "In the Process of Becoming the Best Version of Myself!",
+      linkedin: "https://www.linkedin.com/in/deepthibalasubramanian",
     },
   ];
 
@@ -98,6 +107,7 @@ export default function Previous() {
       image: president,
       position: "President",
       description: "SELCOUTH",
+      linkedin: "https://www.linkedin.com/in/samprincefranklin/",
     },
     {
       name: "Shreejith SG",
@@ -105,6 +115,7 @@ export default function Previous() {
       position: "Vice President",
       description:
         "I'm here to have fun, make people laugh and chew gum, but (un)fortunately I'm all out of gum",
+      linkedin: "https://www.linkedin.com/in/shreejithsg",
     },
   ];
 
