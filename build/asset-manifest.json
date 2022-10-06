@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/MIC-Website/static/css/main.0d5b4ff0.css",
+    "main.js": "/MIC-Website/static/js/main.10766f8b.js",
+    "static/js/787.c75fbd41.chunk.js": "/MIC-Website/static/js/787.c75fbd41.chunk.js",
+    "static/media/Prhead.jpg": "/MIC-Website/static/media/Prhead.376dc97c221b10eb0a65.jpg",
+    "static/media/Designhead.jpg": "/MIC-Website/static/media/Designhead.dd12da7616a089515d15.jpg",
+    "static/media/JointGenSec.jpg": "/MIC-Website/static/media/JointGenSec.1b96b2e9e8f7984c7f17.jpg",
+    "static/media/Principlesec.png": "/MIC-Website/static/media/Principlesec.8c33f4480d9a03479c0a.png",
+    "static/media/advisory-2.jpg": "/MIC-Website/static/media/advisory-2.6267f62b427702078b6d.jpg",
+    "static/media/GenSec.jpg": "/MIC-Website/static/media/GenSec.840588011ec7f504ece5.jpg",
+    "static/media/President.jpg": "/MIC-Website/static/media/President.047b88d7a278568c2b20.jpg",
+    "static/media/Vicepresident.jpg": "/MIC-Website/static/media/Vicepresident.edcc032d3e192e54921a.jpg",
+    "static/media/Fac.jpg": "/MIC-Website/static/media/Fac.58d739aa8ce5dfefd6ad.jpg",
+    "static/media/TechHead.jpg": "/MIC-Website/static/media/TechHead.b885c69ca92292c29c5f.jpg",
+    "static/media/advisory-3.jpg": "/MIC-Website/static/media/advisory-3.4ac701a08a6df51856e6.jpg",
+    "static/media/MIC Logo.svg": "/MIC-Website/static/media/MIC Logo.db0da5aec02b2857a98c544400263824.svg",
+    "static/media/advisory-1.jpg": "/MIC-Website/static/media/advisory-1.7278cd4c24d86b394411.jpg",
+    "index.html": "/MIC-Website/index.html",
+    "main.0d5b4ff0.css.map": "/MIC-Website/static/css/main.0d5b4ff0.css.map",
+    "main.10766f8b.js.map": "/MIC-Website/static/js/main.10766f8b.js.map",
+    "787.c75fbd41.chunk.js.map": "/MIC-Website/static/js/787.c75fbd41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d5b4ff0.css",
+    "static/js/main.10766f8b.js"
+  ]
+}
