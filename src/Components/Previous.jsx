@@ -12,8 +12,10 @@ import advisory1 from "../assets/img/team/advisory-1.jpg";
 import advisory2 from "../assets/img/team/advisory-2.jpg";
 import advisory3 from "../assets/img/team/advisory-3.jpg";
 import Footer from "./Footer";
+import { useState } from "react";
 
 export default function Previous() {
+  const [isHover, setHover] = useState(false);
   document.title = "Our Team";
 
   const facultyData = {
@@ -121,7 +123,16 @@ export default function Previous() {
 
   const showMember = (member) => {
     return (
-      <div className="w-full md:w-1/4 bg-white rounded-lg shadow-lg shadow-blue-200 p-2 flex flex-col justify-center items-stretch hover:scale-105 transition duration-200">
+      <div
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        className="w-full md:w-1/4 bg-white rounded-lg shadow-lg shadow-blue-200 p-2 flex flex-col justify-center items-stretch hover:scale-105 transition duration-200"
+      >
+        {isHover && member.linkedin && (
+          <a href={member.linkedin} target={"_blank"} rel={"noreferrer"}>
+            <i className="text-2xl bg-white rounded-full p-1 px-2 fab fa-linkedin text-blue-500 transition duration-300 absolute top-5 right-5"></i>
+          </a>
+        )}
         <img
           className="max-h-64 object-cover"
           src={member.image}
